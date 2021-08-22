@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div class="card">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Temperature Convertion</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <h1>Temperature Convertion</h1>
+      <section>
+        <select onchange="onChange('from'); calculate()" id="selectFrom">
+          <option value="Celcius">Celcius</option>
+          <option value="Farenheit">Farenheit</option>
+          <option value="Kelvin">Kelvin</option>
+        </select>
+        <span class="toText">to</span>
+        <select onchange="onChange('to'); calculate()" id="selectTo">
+          <option value="Celcius">Celcius</option>
+          <option value="Farenheit">Farenheit</option>
+          <option value="Kelvin">Kelvin</option>
+        </select>
+      </section>
+      <section><input type="text" id="from" onchange="calculate()" /> <span id="toText"> = </span> <input type="text" id="to" disabled /></section>
+      <br />
+      <input type="text" id="colorInputText" placeholder="input color" />
+      <input type="button" id="button1" value="Click to Change" onclick="changeColor()" />
+      <script src="script.js"></script>
+    </body>
+  </div>
+</html>
